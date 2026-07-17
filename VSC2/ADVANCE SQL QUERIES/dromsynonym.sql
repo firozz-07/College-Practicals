@@ -1,0 +1,1 @@
+drop synonym acc_hold;
