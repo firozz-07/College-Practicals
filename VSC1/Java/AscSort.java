@@ -1,4 +1,3 @@
-package VSC1.Java;
 public class AscSort {
 public static void main(String[] args) {
     int [] arr={2,8,9,27};

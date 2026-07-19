@@ -1,4 +1,3 @@
- package VSC1.Java;
 
 public class Immutable {
     public static void main(String[] args) {
