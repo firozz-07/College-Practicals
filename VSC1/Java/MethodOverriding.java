@@ -13,7 +13,10 @@ public class MethodOverriding{
     public static void main(String[] args) {
         cat cats=new cat();
         dog dogs=new dog();
+        cat both =new dog();
+        
         cats.sound();
         dogs.sound();
+        both.sound();
     }
 }
