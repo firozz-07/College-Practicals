@@ -6,12 +6,12 @@ def read_json(filename):
             return data
     except FileNotFoundError:
         print("not found")
-student=read_json("student.json")
+student=read_json("me.json")
 if student:
     print("dictionary data")
-    print(student)
-    print("\nTYpe: ",type(student))
+    # print(student)
+    print("\nType: ",type(student))
     print("\n accessing value")
     print("Name",student["name"])
-    print("Course",student["Course"])
-    print("marks",student["marks"])
+    print("roll_no",student["roll_no"])
+    print("class",student["class"])
