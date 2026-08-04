@@ -1,1 +1,2 @@
-drop synonym acc_hold;
+delete from GANG 
+where roll_no = 7;
