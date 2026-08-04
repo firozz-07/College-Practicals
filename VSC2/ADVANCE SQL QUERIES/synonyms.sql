@@ -1,1 +1,0 @@
-create synonym acc_hold for account_holder;
