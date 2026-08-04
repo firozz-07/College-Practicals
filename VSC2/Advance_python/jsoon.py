@@ -15,3 +15,4 @@ if student:
     print("Name",student["name"])
     print("roll_no",student["roll_no"])
     print("class",student["class"])
+    print("interest",student["interest"])
