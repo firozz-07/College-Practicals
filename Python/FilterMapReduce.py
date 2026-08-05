@@ -1,5 +1,5 @@
-
 from functools import reduce 
+
 number=[12,31,90,67]
 odd=list(filter(lambda x:x%2==1,number))
 print(" filter's Example : ",odd)
