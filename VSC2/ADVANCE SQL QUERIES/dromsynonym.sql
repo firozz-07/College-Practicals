@@ -1,2 +1,1 @@
-delete from GANG 
-where roll_no = 7;
+insert into KAMGAR values("firoz",10000,A1);
