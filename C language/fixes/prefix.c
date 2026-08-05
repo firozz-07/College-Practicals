@@ -16,7 +16,7 @@ int main(void) {
     }
 
     if (op == '+') {
-        printf(": ++%c\n", ch);
+        printf("prefix: ++%c\n", ch);
     } else {
         printf("prefix: --%c\n", ch);
     }
