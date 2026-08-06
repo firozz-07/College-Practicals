@@ -16,4 +16,4 @@ data=[
 for row in data:
     ws.append(row)
 ws.freeze_panes="B2"
-tab=Table(displayName=)
+tab=Table(displayName="StudentTable",ref="A1:D5")
