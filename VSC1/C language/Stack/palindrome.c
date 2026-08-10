@@ -17,7 +17,7 @@ int main(){
         if(str[i]!=ch){
             printf("not palindrome\n");
         }
+        else printf("yes");
     }
-    printf("yes");
 
 }
