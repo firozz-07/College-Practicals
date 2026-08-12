@@ -1,54 +1,30 @@
-import java.util.Scanner;
-
 class Distance {
     int feet;
     int inches;
 
-    void input() {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter feet: ");
-        feet = sc.nextInt();
-
-        System.out.print("Enter inches: ");
-        inches = sc.nextInt();
-    }
-
-    Distance add(Distance d) {
-        Distance temp = new Distance();
-
-        temp.feet = feet + d.feet;
-        temp.inches = inches + d.inches;
-
-        if (temp.inches >= 12) {
-            temp.feet = temp.feet + temp.inches / 12;
-            temp.inches = temp.inches % 12;
-        }
-
-        return temp;
+    Distance(int feet, int inches) {
+        this.feet = feet;
+        this.inches = inches;
     }
 
     void display() {
-        System.out.println(feet + " feet " + inches + " inches");
+        System.out.println(this.feet + " feet " + this.inches + "inches");
     }
 }
 
 public class lastOne {
     public static void main(String[] args) {
-
-        Distance d1 = new Distance();
-        Distance d2 = new Distance();
-        Distance d3;
-
-        System.out.println("Enter first distance:");
-        d1.input();
-
-        System.out.println("\nEnter second distance:");
-        d2.input();
-
-        d3 = d1.add(d2);
-
-        System.out.print("\nTotal distance: ");
+        Distance d1 = new Distance(10, 4);
+        Distance d2 = new Distance(5, 4);
+        Distance d2Ref = d2;
+        Distance d3 = new Distance(d1.feet, d1.inches);
+        System.out.println("First Object:");
+        d1.display();
+        System.out.println("\nSecond Object:");
+        d2.display();
+        System.out.println("\nSecond Object Reference:");
+        d2Ref.display();
+        System.out.println("\nThird Object (Clone of First):");
         d3.display();
     }
 }
