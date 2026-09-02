@@ -1,1 +1,1 @@
-select max(tr_amount) from Account_Transaction;
+insert into STUDENT values(28,'')
