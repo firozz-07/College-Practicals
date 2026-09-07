@@ -16,9 +16,14 @@ void enqueueFront(int value)
     front = rear = 0;
     deque[front] = value;
   }
+  else if (front == 0)
+  {
+    front = max - 1;
+    deque[front] = value;
+  }
   else
   {
-    front = (front - 1 + max) % max;
+    front--;
     deque[front] = value;
   }
 }
@@ -34,9 +39,14 @@ void enqueueRear(int value)
     front = rear = 0;
     deque[rear] = value;
   }
+  else if (rear == max - 1)
+  {
+    rear = 0;
+    deque[rear] = value;
+  }
   else
   {
-    rear = (rear + 1) % max;
+    rear++;
     deque[rear] = value;
   }
 }
@@ -51,9 +61,13 @@ void deleteFront(void)
   {
     front = rear = -1;
   }
+  else if (front == max - 1)
+  {
+    front = 0;
+  }
   else
   {
-    front = (front + 1) % max;
+    front++;
   }
 }
 
@@ -67,9 +81,13 @@ void deleteRear(void)
   {
     front = rear = -1;
   }
+  else if (rear == 0)
+  {
+    rear = max - 1;
+  }
   else
   {
-    rear = (rear - 1 + max) % max;
+    rear--;
   }
 }
 
@@ -100,12 +118,14 @@ void display(void)
 
 int main(void)
 {
- enqueueFront(10);
- enqueueRear(20);
- display();
-deleteFront();
-display();
- enqueueFront(10);
-display();
+  enqueueFront(10);
+  enqueueRear(20);
+  display();
+  deleteFront();
+  display();
+  enqueueFront(10);
+
+  enqueueRear(40);
+  display();
   return 0;
 }
