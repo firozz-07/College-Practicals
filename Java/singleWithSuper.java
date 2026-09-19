@@ -14,7 +14,7 @@ class B extends A{
 		System.out.println(this.surName);
 	}
 }
-public class single{
+public class singleWithSuper{
 public static void main(String [] args){
 	B obj=new B("firoz","pathan");
 }
