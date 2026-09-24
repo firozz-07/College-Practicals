@@ -8,4 +8,3 @@ print(maps)
 
 add=reduce(lambda a,b:a+b,lists)
 print(add)
-
