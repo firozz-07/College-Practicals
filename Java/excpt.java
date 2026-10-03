@@ -4,6 +4,8 @@ public class excpt {
       int a=10/0;
       System.out.println(a);
     }
-    catch()
+    catch(ArithmeticException e){
+      System.out.println("cannot divide by 0");
+    }
   }
 }
