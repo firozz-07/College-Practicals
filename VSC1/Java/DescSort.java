@@ -9,7 +9,6 @@ public static void main(String[] args) {
                 arr[j]=temp;
             }
         }
-        
     }
     for(int k:arr) System.out.print(k+" ");
 }
