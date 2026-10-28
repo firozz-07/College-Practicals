@@ -1,23 +1,38 @@
 #include<stdio.h>
-char stack[50];
+#define size 5
+int stack[size];
 int top=-1;
-void push(char ch){
-    top++;
-    stack[top]=ch;
+void push(int x){
+    if(top==size-1){
+        printf("full");
+    }
+    else{
+        top++;
+        stack[top]=x;
+    }
 }
-int main(){
-    push('a');
-    push('f');
-    push('i');
-    push('r');
-    push('o');
-    push('q');
-    int count=0;
+void pop(){
+    if(top==-1){
+        printf("empyt");
+    }
+    else{
+        top--;
+        printf("deleted");
+    }
+}
+void display(){
+        if(top==-1){
+        printf("empyt");
+    }
+    else{
         for(int i=0;i<=top;i++){
-            char a=stack[i];
-        if(a=='a'||a=='e' ||a=='i' || a== 'o' || a=='u'){
-            count++;
+            printf("%d ",stack[i]);
         }
     }
-    printf("%d",count);
+}
+int main(){
+    push(10);
+    push(20);
+    push(30);
+    display();
 }
