@@ -1,7 +1,6 @@
 class Info{
     public String name;
     public String surname;
-
     public void me(String name, String surname){
         this.name = name;
         this.surname = surname;
