@@ -6,11 +6,9 @@ public class filesRead {
     try (FileReader fr = new FileReader("new.txt")) {
       StringBuilder data = new StringBuilder();
       int ch;
-
       while ((ch = fr.read()) != -1) {
         data.append((char) ch);
       }
-
       System.out.println(data.toString());
     } catch (IOException e) {
       System.out.println("its done brooo !!!");

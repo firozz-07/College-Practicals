@@ -1,17 +1,14 @@
 class Distance {
     int feet;
     int inches;
-
     Distance(int feet, int inches) {
         this.feet = feet;
         this.inches = inches;
     }
-
     void display() {
         System.out.println(this.feet + " feet " + this.inches + "inches");
     }
 }
-
 public class lastOne {
     public static void main(String[] args) {
         Distance d1 = new Distance(10, 4);

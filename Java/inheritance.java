@@ -4,7 +4,6 @@ class A {
 
     }
 }
-
 class B extends A {
     void display(){
         System.out.println("this is from the child class");
