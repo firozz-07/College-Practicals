@@ -1,7 +1,5 @@
 import statistics as s
-
 x = [10, 20, 20, 30, 40, 50]
-
 print("Mean:", s.mean(x))
 print("Median:", s.median(x))
 print("Mode:", s.mode(x))
