@@ -6,7 +6,7 @@ class Info{
         this.surname = surname;
     }
     public void display(){
-        System.out.print("my name is "+name+" "+surname);
+        System.out.print("my name is "+name+" and surname is "+surname);
     }
 }
 public class oop{
