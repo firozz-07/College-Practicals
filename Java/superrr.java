@@ -9,7 +9,7 @@ class B extends A{
 }
 public class superrr {
   public static void main(String[] args) {
-    B obj=new B(300);
+    B obj=new B(600);
     System.out.println(obj.age);
   }
 }
